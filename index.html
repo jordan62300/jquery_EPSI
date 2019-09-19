@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="index.js" defer></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container">
-        <h1 class="mt-4 text-center">Identité</h1>
+    <div class="container ">
+        <h1 class="mt-4 text-center">Creer votre <span class="text-primary">Profil</span></h1>
         
         
             <div class="form-group">
@@ -20,42 +23,39 @@
             </div>
             <div class="form-group">
                 <label for="nom">nom</label>
-                <input class="form-control" id="name" type="text" placeholder="Entrez votre nom">
+                <input class="form-control" id="nom" type="text" placeholder="Entrez votre nom">
             </div>
             <div>
-                <label for="" class="from-check-label" for="age">age</label>
-                <input type="number" id="age" name="age"  min="1" max="150">
+                <label for="age" class="from-check-label" for="age">age</label>
+                <input class="form-control" type="number" id="age" name="age"  min="1" max="150">
             </div>
             <p class="majorite d-none">
-
             </p>
             <div class="form-group">
                 <label for="pseudo">pseudo</label>
                 <input class="form-control" id="pseudo" type="text" placeholder="Entrez votre pseudo">
             </div>
-            <div class="form-check">
-                <input class="form-check-input sex"  type="radio" id="Monsieur" name="sexe" value="Monsieur">
-                <label class="form-check-label" for="Monsieur">Monsieur</label>
-            </div>
-            <div class="form-check">
-                <input class=" form-check-input  sex" type="radio" id="Madame" name="sexe" value="Madame">
-                <label class="form-check-label" for="Madame">Madame</label>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active" for="Monsieur">
+                    <input  autocomplete="off" class="form-check-input sex"  type="radio" id="Monsieur" name="sexe" value="Monsieur"> Monsieur
+                </label>
+                <label class="btn btn-secondary ml-4" for="Madame">
+                    <input autocomplete="off" class="form-check-input sex" type="radio" id="Madame" name="sexe" value="Madame"> Madame
+                </label>
             </div>
             <div class="form-group">
                 <label for="password">mot de passe</label>
-                <input type="password" name="password" id="password">
+                <input  class="form-control" type="password" name="password" id="password">
             </div>
             <div class="form-group">
                 <label for="confirmpassword">Confirmez votre mot de passe</label>
-                <input type="password" name="confirmpassword" id="confirmpassword">
+                <input class="form-control" type="password" name="confirmpassword" id="confirmpassword">
             </div>
             <p class="checkpassword text-danger">
-                
             </p>
-                <button class="btn btn-success mt-4" id="btn" onclick="hello()" >Envoyer</button>
-        
-        <p id="response"></p>
-        <p id="datedenaissance"></p>
+                <button class="btn btn-success mt-4 send" id="btn"  >Envoyer</button>
+            <div class="resume">
+            </div>
     </div>
 </body>
 </html>
