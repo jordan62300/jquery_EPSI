@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4 text-center">Identité</h1>
+        
+        
+            <div class="form-group">
+                <label for="prenom">prenom</label>
+                <input class="form-control" id="prenom" type="text" placeholder="Entrez votre prenom">
+            </div>
+            <div class="form-group">
+                <label for="nom">nom</label>
+                <input class="form-control" id="name" type="text" placeholder="Entrez votre nom">
+            </div>
+            <div>
+                <label for="" class="from-check-label" for="age">age</label>
+                <input type="number" id="age" name="age"  min="1" max="150">
+            </div>
+            <p class="majorite d-none">
+
+            </p>
+            <div class="form-group">
+                <label for="pseudo">pseudo</label>
+                <input class="form-control" id="pseudo" type="text" placeholder="Entrez votre pseudo">
+            </div>
+            <div class="form-check">
+                <input class="form-check-input sex"  type="radio" id="Monsieur" name="sexe" value="Monsieur">
+                <label class="form-check-label" for="Monsieur">Monsieur</label>
+            </div>
+            <div class="form-check">
+                <input class=" form-check-input  sex" type="radio" id="Madame" name="sexe" value="Madame">
+                <label class="form-check-label" for="Madame">Madame</label>
+            </div>
+            <div class="form-group">
+                <label for="password">mot de passe</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="form-group">
+                <label for="confirmpassword">Confirmez votre mot de passe</label>
+                <input type="confirmpassword" name="confirmpassword" id="confirmpassword">
+            </div>
+                <button class="btn btn-success mt-4" id="btn" onclick="hello()" >Envoyer</button>
+        
+        <p id="response"></p>
+        <p id="datedenaissance"></p>
+    </div>
+</body>
+</html>
